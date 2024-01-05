@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Frase from "./components/Frase.js";
+import Dragao from "./components/Dragao.js";
+import Texto from "./components/Texto/Texto.jsx";
+import Box from "./components/Box/Box.jsx";
+import Input from "./components/Input/Input.jsx";
+import Formulario from "./components/Formulario/Formulario.jsx";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Formulario />
+      <Input />
+      <Input />
+
+      <Box />
+      <Box />
+      <Texto />
+      <Texto />
+      <Texto />
+
+      <Dragao />
+
+      <Frase nome="José" paragrafo="true" cor="red" />
+      <Frase nome="Alberto" paragrafo="true" cor="purple" />
+      <Frase cor="blue" />
     </div>
   );
 }

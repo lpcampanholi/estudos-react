@@ -1,0 +1,14 @@
+.box {
+    background-color: darkviolet;
+    width: 10em;
+    height: 10em;
+    text-align: center;
+    border-radius: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nome {
+    color: white;
+}
