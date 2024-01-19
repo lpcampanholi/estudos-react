@@ -1,19 +1,21 @@
-import {useState} from "react";
+import { useState } from 'react';
 
-function Input () {
+function Input() {
 
-    const [texto, setTexto] = useState("Texto inicial");
+  const [textoTitulo, setTextoTitulo] = useState('Título Inicial');
 
-    const mudarTexto = (e) => {
-        setTexto(e.target.value);
-    }
+  function mudaTexto(e) {
+    console.log(textoTitulo)
+    setTextoTitulo(e.target.value)
+  }
 
-    return (
-        <div>
-            <h2>{texto}</h2>
-            <input type="text" onChange={mudarTexto} />
-        </div>
-    )
+  return (
+    <>
+      <h2>{textoTitulo}</h2>
+      <label htmlFor="text">Testando Estado</label>
+      <input type="text" name="text" id="text" placeholder="testando useState" onChange={mudaTexto} />
+    </>
+  )
 }
 
 export default Input;
