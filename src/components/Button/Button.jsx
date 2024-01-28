@@ -1,6 +1,6 @@
 import "./Button.css"
 
-function Button (props) {
+function Button(props) {
     return <button className="button" onClick={props.event}>Evento</button>
 }
 

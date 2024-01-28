@@ -5,7 +5,7 @@ function Input() {
   const [textoTitulo, setTextoTitulo] = useState('Título Inicial');
 
   function mudaTexto(e) {
-    console.log(textoTitulo)
+    // console.log(textoTitulo)
     setTextoTitulo(e.target.value)
   }
 

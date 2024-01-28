@@ -13,4 +13,4 @@ function ImprimeListas({ lista }) {
   )
 }
 
-export default ImprimeListas
+export default ImprimeListas;
