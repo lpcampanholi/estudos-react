@@ -18,8 +18,9 @@ function Condicional() {
 		<div>
 			<h2>Renderização Condicional</h2>
 			<form>
-				<label htmlFor="email">E-mail</label>
-				<input type="email" name="email" id="email" placeholder="Insira seu E-mail" onChange={(e) => setEmail(e.target.value)} />
+				<label>E-mail
+					<input type="email" name="email" placeholder="Insira seu E-mail" onChange={(e) => setEmail(e.target.value)} />
+				</label>
 				<button type="submit" onClick={enviaDados}>Enviar</button>
 			</form>
 			{userEmail && (
