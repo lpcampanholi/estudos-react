@@ -7,15 +7,6 @@ function Formulario() {
   const [sobrenome, setSobrenome] = useState();
   const [email, setEmail] = useState();
 
-  function cadastraDados(e) {
-    e.preventDefault();
-    const dev = {
-      nome: nome = nome,
-      sobrenome: sobrenome = sobrenome,
-      email: email = email
-    };
-  }
-
   return (
     <div className="formulario">
       <form>
@@ -24,16 +15,16 @@ function Formulario() {
 
         <div className="campo">
           <label htmlFor="nome">Nome</label>
-          <input className="caixa" type="text" id="nome" placeholder="Insira seu nome" onChange={(e) => setNome(e.target.value)} />
+          <input className="caixa" type="text" id="nome" placeholder="Insira seu nome" required onChange={(e) => setNome(e.target.value)} />
         </div>
         <div className="campo">
           <label htmlFor="sobrenome">Sobrenome</label>
-          <input className="caixa" type="text" id="sobrenome" placeholder="Insira seu Sobrenome" onChange={(e) => setSobrenome(e.target.value)} />
+          <input className="caixa" type="text" id="sobrenome" placeholder="Insira seu Sobrenome" required onChange={(e) => setSobrenome(e.target.value)} />
         </div>
 
         <div className="campo">
           <label htmlFor="email">E-mail</label>
-          <input className="caixa" type="email" id="email" placeholder="Insira seu E-mail" onChange={(e) => setEmail(e.target.value)} />
+          <input className="caixa" type="email" id="email" placeholder="Insira seu E-mail" required onChange={(e) => setEmail(e.target.value)} />
         </div>
 
         <div className="campo">
@@ -84,11 +75,11 @@ function Formulario() {
         </div>
 
       </form>
-      <button className="button" type="submit" onClick={cadastraDados}>Cadastrar</button>
+      <button className="button" type="submit">Cadastrar</button>
 
       <p>Nome: {nome}</p>
-      <p>Nome: {sobrenome}</p>
-      <p>Nome: {email}</p>
+      <p>Sobrenome: {sobrenome}</p>
+      <p>E-mail: {email}</p>
     </div>
   )
 }
